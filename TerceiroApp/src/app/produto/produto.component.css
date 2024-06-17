@@ -23,3 +23,11 @@ flex-direction: row;
   justify-content: center; background-color: lightblue;
   align-items: center;
  }
+ .pnlProduto{
+  font-size: 15px;
+  width:200px; height: 100px; background-color: lightyellow;
+  border: black solid 1px; text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: 5px; padding: 10px;
+ }
