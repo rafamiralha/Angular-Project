@@ -10,6 +10,7 @@ import { Component, Input, OnInit } from '@angular/core';
 export class LateralComponent implements OnInit{
 @Input() pagina: string = "indefinida"
 acesso: string = ""
+page: string = ""
 
 constructor() {}
 
@@ -22,6 +23,7 @@ formataData(d:Date): string {
   return dataStr;
 }
 ngOnInit(): void {
+  this.page = `${this.pagina}`;
   let d: Date = new Date();
   this.acesso = this.formataData(d);
   }

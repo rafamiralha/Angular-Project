@@ -1,15 +1,19 @@
 <main>
-  <div id="container">
-    <h1>CONTATOS</h1>
-    <form (submit)="incluir()">
-      <label for="nome">Nome</label> <input type="text" name="nome" [(ngModel)] = "contato.nome">&nbsp;
-      <label for="email">Email</label> <input type="email" name="email" [(ngModel)] = "contato.email">&nbsp;
-      <button type="submit">incluir</button>
-    </form>
-    <ul>
-      <li *ngFor="let c of getContatos()">{{c.nome}}::{{c.email}}</li>
-    </ul>
+  <div id="content">
+    <div id="container">
+      <h1>CONTATOS</h1>
+      <form (submit)="incluir()">
+        <label for="nome">Nome</label> <input type="text" name="nome" [(ngModel)] = "contato.nome">&nbsp;
+        <label for="email">Email</label> <input type="email" name="email" [(ngModel)] = "contato.email">&nbsp;
+        <button type="submit">incluir</button>
+      </form>
+      <ul>
+        <li *ngFor="let c of getContatos()">{{c.nome}}::{{c.email}}</li>
+      </ul>
 
+    </div>
+    <app-lateral  id= "lateral"[pagina]="pagina"></app-lateral>
   </div>
-  
+
+
 </main>

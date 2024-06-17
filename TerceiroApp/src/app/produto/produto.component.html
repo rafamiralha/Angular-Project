@@ -1,0 +1,17 @@
+<main>
+  <div  id="content">
+    <div id="container">
+    <h2 style="display: inline;">Listagem de Produtos</h2>
+    <button style="width: 120px;position: relative; left: 80%;"  (click)="incluir()">Novo Produto</button>
+
+    <div class="pnlProduto">
+      <br>
+      <hr>
+      <br>
+      A001<br> Banana <br> Quantidade:500 <hr>
+      <button (click)="excluir('A001')">Excluir</button>
+    </div>
+  </div>
+  <app-lateral id="lateral" [pagina]="pagina"></app-lateral>
+</div>
+</main>
